@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+		<title>Fetch</title>
+	</head>
+	<body>
+		Hola
+	</body>
+  <script>
+    fetch("https://script.google.com/macros/s/AKfycby83b75J2XG_XWGpPpvmjL38rTj5YV_6cqx2Nn_T1jbpSJpFpE/exec?cmd=reactWeather&day=1")
+    .then(r => r.json())
+    .then(json => {
+      console.dir(json)
+    });
+  </script>
+</html>
